@@ -1,0 +1,24 @@
+
+<form #userForm="ngForm">
+<input type="text" name="username" [(ngModel)]="anytext">
+<input type="email" name="email" [(ngModel)]="anytext">
+
+</form>
+
+<div>
+  <form (ngSubmit)="onSubmit()">
+    <input class="input-box" type="text" name="username" [(ngModel)]="anytext" placeholder="Input any text" required>
+
+    <input class="input-box" type="email" name="email" [(ngModel)]="email" placeholder="Input your email" required email>
+
+    <input class="input-box" type="tel" name="phone" [(ngModel)]="phone" placeholder="Input your phone number">
+
+    <textarea class="input-box" name="message" [(ngModel)]="message" placeholder="Enter your message"></textarea>
+
+    <input class="btn" type="submit" value="Submit" [disabled]="!anytext">
+  </form>
+</div>
+
+<p *ngIf="submitted">You have entered: {{ anytext }}</p>
+
+<router-outlet />

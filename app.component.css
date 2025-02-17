@@ -1,0 +1,75 @@
+/* Basic form styling */
+div {
+    display: flex;
+    justify-content: center; /* Center the form horizontally */
+    align-items: center; /* Center the form vertically */
+    min-height: 100vh; /* Ensure full viewport height */
+    background-color: #f4f4f4; /* Light background color */
+  }
+  
+  form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 400px; /* Adjust as needed */
+  }
+  
+  .input-box {
+    width: calc(100% - 22px); /* Full width minus padding and border */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    font-size: 16px;
+  }
+  
+  textarea.input-box {
+    height: 120px; /* Adjust height as needed */
+    resize: vertical; /* Allow vertical resizing */
+  }
+  
+  .btn {
+    background-color: #007bff; /* Blue button */
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%; /* Full width button */
+  }
+  
+  .btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .btn:disabled {
+    background-color: #ccc; /* Grayed out when disabled */
+    cursor: default;
+  }
+  
+  /* Paragraph styling */
+  p {
+    margin-top: 20px;
+    text-align: center;
+    font-style: italic;
+    color: #777;
+  }
+
+  /* ... all the CSS from the previous response ... */
+
+/* Paragraph styling (already included) */
+p {
+  margin-top: 20px;
+  text-align: center;
+  font-style: italic;
+  color: #777;
+}
+  
+  /* Optional: Add some spacing between form elements */
+  label {
+    display: block; /* Make labels stack on top of inputs */
+    margin-bottom: 5px;
+  }
